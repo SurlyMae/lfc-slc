@@ -86,24 +86,35 @@
           <p>If you are interested in becoming a member of LFC Salt Lake City, please fill out the form below. Once we have enough interest to apply for official membership, we will contact you with additional information. You can check out what other North American supporters clubs are like <a href="https://www.liverpoolfc.com/fans/official-lfc-supporters-clubs/north-america">here</a>.</p>
           <p>Before we can apply to become an officially-sanctioned club, we need at least 50 members. 15 of those must also be <a href="https://www.liverpoolfc.com/membership">LFC Official Membership holders.</a> If you already have a membership, or are willing to purchase a membership, please note that on the form below.</p>
           <p><strong>Sponsors!</strong></p>
-          <p>If you are a bar or restaurant with a big screen or five and a willingness to host private events as early as 5 am on the weekend, we want to talk to you! If you are a business owner who loves LFC and wants to provide support for our club, whether financial or in-kind donations, we want to talk to you too! Please fill out the form below and note in the message field how you'd like to help, and we'll reach out to you soon.</p>
-          <form method="post" action="#">
+          <p>If you are a bar or restaurant with a big screen or five and a willingness to host private events as early as 5 am on the weekends, or want to show weekday afternoon matches for us, we want to talk to you! If you are a business owner who loves LFC and wants to provide support for our club, whether financial or in-kind donations, we want to talk to you too! Please fill out the form below and note in the message field how you'd like to help, and we'll reach out to you soon.</p>
+          <form method="post" data-netlify="true">
             <div class="fields">
-              <!-- <div class="field">
+              <div class="field">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" />
-              </div> -->
+              </div>
               <div class="field">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" />
               </div>
               <div class="field">
+                  <input type="checkbox" id="currentMember" name="currentMember">
+                  <label for="currentMember">I have an Official LFC Membership</label>
+              </div>
+              <div class="field">
+                  <input type="checkbox" id="futureMember" name="futureMember">
+                  <label for="futureMember">I am willing to purchase an Official LFC Membership</label>
+              </div>
+              <div class="field">
                 <label for="message">Message</label>
                 <textarea name="message" id="message" rows="4"></textarea>
               </div>
+              <div class="field">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
             </div>
             <ul class="actions">
-              <li><input type="submit" value="Send Message" /></li>
+              <li><input type="submit" value="Submit" /></li>
             </ul>
           </form>
 				</ul>
